@@ -25,6 +25,8 @@ buildscript {
         classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
         classpath 'com.google.code.gson:gson:2.8.6'
         classpath 'gradle.plugin.com.matthewprenger:CurseGradle:1.0.9'
+        classpath "gradle.plugin.com.github.rzabini:gradle-jython:1.0.0"
+        classpath "io.github.gradle-clojure:gradle-clojure-plugin:0.5.0-alpha.1"
     }
 }
 
@@ -32,7 +34,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'com.matthewprenger.cursegradle'
-
+apply plugin: "com.github.rzabini.gradle-jython"
 version project.modVersion
 group project.modGroup // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 
