@@ -181,6 +181,7 @@ public class ModuleManager
         Add(new TorchAnnihilatorModule());
         
         /// Schematica
+        Add(new JythoHelloWorld());
         Add(new PrinterModule());
         Add(new PrinterBypassModule());
         
